@@ -2,82 +2,113 @@
 
 ## Overview
 
-This repository contains backend API implementations focused on authentication, service security, middleware design, request validation, and platform-oriented API engineering.
+This repository contains production-oriented backend API implementations built using modern Python frameworks and REST principles.
 
-Each implementation is organised in its own directory with independent source code, dependencies, setup instructions, verification steps, security considerations, and troubleshooting guidance.
+Each implementation focuses on a core aspect of API engineering, including endpoint design, authentication, versioning, and documentation, with an emphasis on clean architecture, maintainability, and developer experience.
 
 ## Implementations
 
+### REST Endpoint Development
+
+Builds RESTful APIs using standard HTTP methods, structured routing, request validation, and consistent response handling.
+
+**Skills**
+
+- REST API Design
+- HTTP Methods
+- JSON APIs
+- CRUD Operations
+- Request Validation
+
+---
+
 ### JWT Authentication Service
 
-Location:
+Implements secure authentication using JSON Web Tokens for protected API access.
 
-    jwt-authentication-service/
+**Skills**
 
-A Node.js and Express authentication service that provides:
+- JWT Authentication
+- Authorization
+- Token Validation
+- Protected Routes
+- Security Best Practices
 
-- User registration
-- bcrypt password hashing
-- JWT token generation
-- JWT signature and expiration validation
-- Middleware-protected endpoints
-- Public and authenticated routes
-- Issuer and audience claim verification
-- Missing, malformed, invalid, and expired token handling
-- Input validation and meaningful HTTP responses
+---
 
-Documentation:
+### API Versioning Service
 
-    jwt-authentication-service/README.md
+Demonstrates backward-compatible API evolution through URL-based versioning, allowing multiple API versions to coexist while maintaining compatibility with existing clients.
+
+**Skills**
+
+- API Versioning
+- Backward Compatibility
+- API Lifecycle Management
+- HTTP Headers
+- Version Routing
+
+---
+
+### Swagger OpenAPI Service
+
+Implements automatic OpenAPI documentation using Flask-RESTX with interactive Swagger UI, request validation, response schemas, and specification generation.
+
+**Skills**
+
+- OpenAPI 3.0
+- Swagger UI
+- API Documentation
+- Request Validation
+- Response Modelling
+- API Specification
+
+---
 
 ## Repository Structure
 
-    api-platform-engineering/
-    ├── jwt-authentication-service/
-    │   ├── middleware/
-    │   │   └── authMiddleware.js
-    │   ├── routes/
-    │   │   ├── auth.js
-    │   │   └── protected.js
-    │   ├── .gitignore
-    │   ├── package-lock.json
-    │   ├── package.json
-    │   ├── README.md
-    │   ├── server.js
-    │   └── test-auth.sh
-    └── README.md
+```text
+api-platform-engineering/
+├── api-versioning-service/
+├── jwt-authentication-service/
+├── swagger-openapi-service/
+└── README.md
+```
 
-## Engineering Areas
+## Technology Stack
 
-The repository demonstrates practical experience in:
+- Python
+- Flask
+- Flask-RESTX
+- REST APIs
+- OpenAPI 3.0
+- Swagger UI
+- JWT
+- JSON
+- Linux
+- Git
 
-- REST API development
-- Authentication and authorization
-- API security
-- Express middleware
-- Token-based identity
-- Password protection
-- Environment-secret management
-- HTTP status handling
-- Backend testing
-- Linux service operations
-- Node.js dependency management
+## Key Skills Demonstrated
 
-## Usage
+- REST API Development
+- Authentication & Authorization
+- API Versioning
+- API Documentation
+- OpenAPI Specification
+- Request Validation
+- Response Modelling
+- HTTP Standards
+- Secure API Design
+- Backend Engineering
 
-Open the directory for the implementation you want to run and follow its README.
+## Future Implementations
 
-Example:
+- FastAPI Services
+- NoSQL Data Modelling
+- API Rate Limiting
+- OAuth 2.0
+- Role-Based Access Control (RBAC)
+- API Gateway Patterns
+- Caching
+- Containerized API Deployment
 
-    cd jwt-authentication-service
-    npm install
-
-Create the required environment configuration and then start the service:
-
-    npm start
-
-## Security Notice
-
-Environment files, credentials, tokens, process files, dependency directories, and application logs must not be committed.
-
-Each implementation contains its own `.gitignore` and security guidance.
