@@ -1,38 +1,38 @@
-# Dependencies
-node_modules/
-**/node_modules/
 
-# Environment secrets
-.env
-.env.*
+!**/.env.example
 !.env.example
+# Authentication credentials
+# Dependencies
+# Environment secrets
+# Logs
+# Operating system and editor files
+# Process files
+# Python environments and generated files
+# Test coverage
 **/.env
 **/.env.*
-!**/.env.example
-# Authentication credentials
-token.txt
-expiry-token.txt
-**/token.txt
+**/coverage/
 **/expiry-token.txt
-# Logs
+**/node_modules/
+**/token.txt
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-# Process files
 *.pid
 *.pid.lock
-# Test coverage
-coverage/
-**/coverage/
-# Operating system and editor files
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-# Python environments and generated files
-venv/
-.venv/
-__pycache__/
 *.py[cod]
+.DS_Store
+.env
+.env.*
+.idea/
 .pytest_cache/
+.venv/
+.vscode/
+Thumbs.db
+__pycache__/
+coverage/
+expiry-token.txt
+node_modules/
+npm-debug.log*
+token.txt
+venv/
+yarn-debug.log*
+yarn-error.log*
